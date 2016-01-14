@@ -197,7 +197,7 @@ public class ResRoot {
                 xml.add(node);
                 break;
             case "string":
-                anim.add(node);
+                string.add(node);
                 break;
             case "style":
                 style.add(node);
