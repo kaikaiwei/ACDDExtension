@@ -30,16 +30,17 @@ package com.acdd.homelauncher;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class NativeFragmentActivity extends Activity {
+public class NativeFragmentActivity extends FragmentActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_native_fragment);
-        getFragmentManager().beginTransaction().add(R.id.container,new NativeFragment()).commit();
+        getSupportFragmentManager().beginTransaction().add(R.id.container,new NativeFragment()).commit();
 
     }
 

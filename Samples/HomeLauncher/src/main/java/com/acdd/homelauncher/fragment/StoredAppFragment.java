@@ -30,7 +30,6 @@ package com.acdd.homelauncher.fragment;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -48,7 +47,7 @@ import com.acdd.homelauncher.fragment.dummy.DummyContent;
  * Activities containing this fragment MUST implement the {@link OnFragmentInteractionListener}
  * interface.
  */
-public class StoredAppFragment extends Fragment  implements AdapterView.OnItemClickListener{
+public class StoredAppFragment extends android.support.v4.app.Fragment  implements AdapterView.OnItemClickListener{
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
