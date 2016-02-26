@@ -1,7 +1,7 @@
 /*
  * ACDDExtension Project
- * file build.gradle  is  part of ACDDExtension
- * The MIT License (MIT)  Copyright (c) 2015 Bunny Blue.
+ * file FakeContext.java  is  part of ACDDExtension
+ * The MIT License (MIT)  Copyright (c) 2016 Bunny Blue.
  *
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -25,22 +25,21 @@
  *
  */
 
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
+package com.umeng.fb.example;
 
-buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:1.5.0'
+import android.content.Context;
+import android.content.ContextWrapper;
 
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
-    }
-}
+/**修复友盟获取资源bug
+ * Created by BunnyBlue on 2/26/16.
+ */
+public class FakeContext extends ContextWrapper {
+	public FakeContext(Context base) {
+		super(base);
+	}
 
-allprojects {
-    repositories {
-        jcenter()
-    }
+	@Override
+	public String getPackageName() {
+		return "com.umeng.fb.example";
+	}
 }

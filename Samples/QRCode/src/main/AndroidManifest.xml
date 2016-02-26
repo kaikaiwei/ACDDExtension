@@ -41,8 +41,9 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity
+            android:theme="@style/QrTheme"
             android:name=".MainActivity"
-            android:label="@string/app_name">
+            android:label="QRCode">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

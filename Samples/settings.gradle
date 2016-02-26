@@ -25,4 +25,4 @@
  *
  */
 
-include ':AppCenter', ':testapp1', ':testapp12','Game2','HomeLauncher','Imageloader','QRCode'
+include ':AppCenter', ':testapp1', ':testapp12', 'Game2', 'HomeLauncher', 'Imageloader', 'QRCode', ':Feedback'

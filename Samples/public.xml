@@ -28,5 +28,5 @@
 
 <resources>
     <public type="drawable" name="host_launcher_web" id="0x7f020000" />
-
+    <public type="style" name="QrTheme" id="0x7f080002" />
 </resources>
