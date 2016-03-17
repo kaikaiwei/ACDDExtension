@@ -20,5 +20,6 @@
     android:layout_height="wrap_content"
 
     android:gravity="center_vertical"
+          android:textColor="@color/colorstatelist"
 
  />
