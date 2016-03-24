@@ -1,7 +1,7 @@
 /*
- * ACDDExtension Project
- * file settings.gradle  is  part of ACDDExtension
- * The MIT License (MIT)  Copyright (c) 2015 Bunny Blue.
+ * ACDD Project
+ * file ApplicationTest.java  is  part of ACCD
+ * The MIT License (MIT)  Copyright (c) 2016 Bunny Blue,achellies.
  *
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -25,4 +25,16 @@
  *
  */
 
-include ':AppCenter', ':testapp1', ':testapp12', 'Game2', 'HomeLauncher', 'Imageloader', 'QRCode', ':Feedback',':Acddthirdsupport'
+package org.acdd.acddthirdsupport;
+
+import android.app.Application;
+import android.test.ApplicationTestCase;
+
+/**
+ * <a href="http://d.android.com/tools/testing/testing_android.html">Testing Fundamentals</a>
+ */
+public class ApplicationTest extends ApplicationTestCase<Application> {
+    public ApplicationTest() {
+        super(Application.class);
+    }
+}

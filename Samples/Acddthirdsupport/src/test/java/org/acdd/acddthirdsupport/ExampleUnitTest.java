@@ -1,7 +1,7 @@
 /*
- * ACDDExtension Project
- * file settings.gradle  is  part of ACDDExtension
- * The MIT License (MIT)  Copyright (c) 2015 Bunny Blue.
+ * ACDD Project
+ * file ExampleUnitTest.java  is  part of ACCD
+ * The MIT License (MIT)  Copyright (c) 2016 Bunny Blue,achellies.
  *
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -25,4 +25,18 @@
  *
  */
 
-include ':AppCenter', ':testapp1', ':testapp12', 'Game2', 'HomeLauncher', 'Imageloader', 'QRCode', ':Feedback',':Acddthirdsupport'
+package org.acdd.acddthirdsupport;
+
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+
+/**
+ * To work on unit tests, switch the Test Artifact in the Build Variants view.
+ */
+public class ExampleUnitTest {
+    @Test
+    public void addition_isCorrect() throws Exception {
+        assertEquals(4, 2 + 2);
+    }
+}
