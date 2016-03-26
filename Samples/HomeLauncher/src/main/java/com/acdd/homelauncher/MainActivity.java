@@ -90,6 +90,7 @@ public class MainActivity extends FragmentActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            ACDD.getInstance().checkBundleInstall("com.acdd.android.appcenter");
             Intent mDelye = new Intent();
             mDelye.setClassName(this, "com.acdd.android.appcenter.main.GcContainerActivity");
             startActivity(mDelye);

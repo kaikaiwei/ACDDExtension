@@ -70,4 +70,5 @@ dependencies {
     provided files('libs/acdd.jar')
     provided files('libs/square-otto-1.3.2.jar')
     provided files('libs/export.jar')
+    compile files('libs/acdd.jar')
 }

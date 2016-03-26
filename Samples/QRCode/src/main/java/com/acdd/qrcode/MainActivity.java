@@ -39,6 +39,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import dalvik.system.VMStack;
+
 public class MainActivity extends Activity {
 	private final static int SCANNIN_GREQUEST_CODE = 1;
 	/**
@@ -57,6 +59,7 @@ public class MainActivity extends Activity {
 		//setContentView(OGSdkResUtil.getResofR(this).getLayout("activity_main"));
 		mTextView = (TextView) findViewById(R.id.result);
 		mImageView = (ImageView) findViewById(R.id.qrcode_bitmap);
+		ClassLoader classLoader=VMStack.getCallingClassLoader();
 
 		// 点击按钮跳转到二维码扫描界面，这里用的是startActivityForResult跳转
 		// 扫描完了之后调到该界面
